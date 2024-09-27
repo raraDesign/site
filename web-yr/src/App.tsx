@@ -56,42 +56,74 @@ const App: React.FC = () => {
                 </div>
             </div>
             {/*Section2*/}
-            <div className={'relative w-full h-full text-6xl font-bold text-center tracking-widest'}>
-                <img src={Background} alt={'작업이미지'} className={'absolute w-full'}/>
+            <div className={'relative w-full h-screen text-6xl font-bold text-center tracking-widest'}>
+                <img src={Background} alt={'작업이미지'} className={'object-cover w-full h-full'}/>
                 <div className={'absolute text-white m-auto left-0 right-0 top-[50%]'}>우리가 매일 경험하는 것들</div>
                 <div className={'absolute text-white m-auto left-0 right-0 top-[50%] mt-[100px] leading-[70px]'}>화면 그
                     이상에서 우리의 경험을 형성합니다
                 </div>
             </div>
             {/*Section3*/}
-            <div className={'bg-c-ivory'}>
-                <div>
-                    <div className={'mb-3'}>사용자 경험 화면구성</div>
-                    <div className={'font-medium text-5xl text-[#c1c1c1]'}>
-                        <span>단순한 시각적 디자인을 넘어서</span>
+            <div className={'bg-c-ivory relative'}>
+                <div className={'h-screen mx-auto w-[1200px] py-20'}>
+                    <div className={'flex justify-between'}>
+                        <div>관련이미지</div>
+                        <div>
+                            <div className={'mb-4 text-lg'}>사용자 경험 화면구성</div>
+                            <div className={'font-medium text-5xl text-[#c1c1c1]'}>
+                                <div className={'py-2'}>단순한 시각적 디자인을</div>
+                                <div className={'py-2'}>넘어서</div>
+                                <div className={'py-2'}>사용자의 경험을 선사합니다</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div className={'mb-3'}>신속 정확한 표현</div>
-                    <div className={'font-medium text-5xl text-[#c1c1c1]'}>
-                        <span>빠르고 명확하게 화면을 구현하여</span>
+                <div className={'h-screen mx-auto w-[1200px] py-20'}>
+                    <div className={'flex justify-between'}>
+                        <div>관련이미지</div>
+                        <div>
+                            <div className={'mb-4 text-lg'}>신속 정확한 표현</div>
+                            <div className={'font-medium text-5xl text-[#c1c1c1]'}>
+                                <div className={'py-2'}>빠르고 명확하게</div>
+                                <div className={'py-2'}>의도를 파악하여</div>
+                                <div className={'py-2'}>화면을 구현합니다</div>
+                            </div>
                         </div>
+                    </div>
                 </div>
-                <div>
-                    <div className={'mb-3'}>효율적 문제해결</div>
-                    <div className={'font-medium text-5xl text-[#c1c1c1]'}>
-                        <span>복잡한 문제를 효율적으로 해결해 나갑니다</span>
+                <div className={'h-screen mx-auto w-[1200px] py-20'}>
+                    <div className={'flex justify-between'}>
+                        <div>관련이미지</div>
+                        <div>
+                            <div className={'mb-4 text-lg'}>효율적 문제해결</div>
+                            <div className={'font-medium text-5xl text-[#c1c1c1]'}>
+                                <div className={'py-2'}>복잡한 문제를</div>
+                                <div className={'py-2'}>효율적으로 해결해</div>
+                                <div className={'py-2'}>앞으로 나아갑니다</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             {/*Section4*/}
-            <div>
-                <div>사용자가 실제로 느끼고, 기억에 남을 경험을 만드는 것을 목표로</div>
-                <div>사용자 경험을 강화하는 요소로 작용하도록 설계해 나갑니다</div>
+            <div className={'bg-black relative'}>
+                <div
+                    className={'h-screen mx-auto w-[1200px] py-40 text-c-orange font-semibold text-4xl leading-[52px] tracking-wide'}>
+                    <div>사용자가 실제로 느끼고, 기억에 남을 경험을 만드는 것을 목표로</div>
+                    <div>사용자 경험을 강화하는 요소로 작용하도록 설계해 나갑니다</div>
+                </div>
             </div>
             {/*Section5*/}
-            <div>지금, 사용자가 느끼는 모든 순간을 경험 하세요</div>
-            <div>Works 화살표이미지</div>
+            <div className={'bg-c-ivory relative'}>
+                <div
+                    className={'h-screen mx-auto w-[1200px] py-40 text-c-orange font-semibold text-4xl leading-[52px] tracking-wide'}>
+                    <div>지금, 사용자가 느끼는 모든 순간을 경험 하세요</div>
+                    <div>
+                    <div className={'text-black'}>Works</div>
+                        <div>화살표이미지</div>
+                    </div>
+                </div>
+            </div>
         </main>
     );
 };
